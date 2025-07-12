@@ -23,33 +23,33 @@ interface RecipeCalendarProps {
 
 const generateRecipes = (nutritionData: NutritionData): Recipe[] => {
   const recipes: { [key: string]: Recipe[] } = {
-    balanceada: [
-      { id: "1", name: "Avena con frutas y nueces", calories: 350, protein: 12, carbs: 45, fats: 15, prepTime: "10 min", servings: 1, type: "breakfast" },
-      { id: "2", name: "Pollo a la plancha con quinoa", calories: 450, protein: 35, carbs: 40, fats: 12, prepTime: "25 min", servings: 1, type: "lunch" },
-      { id: "3", name: "Salmón con verduras al vapor", calories: 400, protein: 30, carbs: 15, fats: 25, prepTime: "20 min", servings: 1, type: "dinner" },
-      { id: "4", name: "Yogur griego con almendras", calories: 200, protein: 15, carbs: 12, fats: 10, prepTime: "5 min", servings: 1, type: "snack" },
+    balanced: [
+      { id: "1", name: "Oatmeal with fruits and nuts", calories: 350, protein: 12, carbs: 45, fats: 15, prepTime: "10 min", servings: 1, type: "breakfast" },
+      { id: "2", name: "Grilled chicken with quinoa", calories: 450, protein: 35, carbs: 40, fats: 12, prepTime: "25 min", servings: 1, type: "lunch" },
+      { id: "3", name: "Salmon with steamed vegetables", calories: 400, protein: 30, carbs: 15, fats: 25, prepTime: "20 min", servings: 1, type: "dinner" },
+      { id: "4", name: "Greek yogurt with almonds", calories: 200, protein: 15, carbs: 12, fats: 10, prepTime: "5 min", servings: 1, type: "snack" },
     ],
     keto: [
-      { id: "5", name: "Huevos revueltos con aguacate", calories: 380, protein: 18, carbs: 8, fats: 32, prepTime: "8 min", servings: 1, type: "breakfast" },
-      { id: "6", name: "Ensalada de pollo con aceite de oliva", calories: 420, protein: 32, carbs: 6, fats: 30, prepTime: "15 min", servings: 1, type: "lunch" },
-      { id: "7", name: "Salmón con brócoli y mantequilla", calories: 450, protein: 35, carbs: 8, fats: 32, prepTime: "18 min", servings: 1, type: "dinner" },
-      { id: "8", name: "Nueces mixtas", calories: 180, protein: 6, carbs: 4, fats: 16, prepTime: "0 min", servings: 1, type: "snack" },
+      { id: "5", name: "Scrambled eggs with avocado", calories: 380, protein: 18, carbs: 8, fats: 32, prepTime: "8 min", servings: 1, type: "breakfast" },
+      { id: "6", name: "Chicken salad with olive oil", calories: 420, protein: 32, carbs: 6, fats: 30, prepTime: "15 min", servings: 1, type: "lunch" },
+      { id: "7", name: "Salmon with broccoli and butter", calories: 450, protein: 35, carbs: 8, fats: 32, prepTime: "18 min", servings: 1, type: "dinner" },
+      { id: "8", name: "Mixed nuts", calories: 180, protein: 6, carbs: 4, fats: 16, prepTime: "0 min", servings: 1, type: "snack" },
     ],
-    vegana: [
-      { id: "9", name: "Bowl de acai con granola", calories: 320, protein: 8, carbs: 55, fats: 12, prepTime: "10 min", servings: 1, type: "breakfast" },
-      { id: "10", name: "Curry de lentejas con arroz integral", calories: 380, protein: 18, carbs: 65, fats: 8, prepTime: "30 min", servings: 1, type: "lunch" },
-      { id: "11", name: "Tofu salteado con vegetales", calories: 350, protein: 20, carbs: 25, fats: 20, prepTime: "20 min", servings: 1, type: "dinner" },
-      { id: "12", name: "Hummus con vegetales", calories: 150, protein: 6, carbs: 15, fats: 8, prepTime: "5 min", servings: 1, type: "snack" },
+    vegan: [
+      { id: "9", name: "Acai bowl with granola", calories: 320, protein: 8, carbs: 55, fats: 12, prepTime: "10 min", servings: 1, type: "breakfast" },
+      { id: "10", name: "Lentil curry with brown rice", calories: 380, protein: 18, carbs: 65, fats: 8, prepTime: "30 min", servings: 1, type: "lunch" },
+      { id: "11", name: "Stir-fried tofu with vegetables", calories: 350, protein: 20, carbs: 25, fats: 20, prepTime: "20 min", servings: 1, type: "dinner" },
+      { id: "12", name: "Hummus with vegetables", calories: 150, protein: 6, carbs: 15, fats: 8, prepTime: "5 min", servings: 1, type: "snack" },
     ],
-    mediterranea: [
-      { id: "13", name: "Tostada de aguacate y tomate", calories: 280, protein: 8, carbs: 25, fats: 18, prepTime: "8 min", servings: 1, type: "breakfast" },
-      { id: "14", name: "Ensalada griega con pescado", calories: 420, protein: 28, carbs: 20, fats: 25, prepTime: "15 min", servings: 1, type: "lunch" },
-      { id: "15", name: "Pescado al horno con aceitunas", calories: 380, protein: 32, carbs: 12, fats: 22, prepTime: "25 min", servings: 1, type: "dinner" },
-      { id: "16", name: "Aceitunas y queso feta", calories: 170, protein: 8, carbs: 5, fats: 14, prepTime: "2 min", servings: 1, type: "snack" },
+    mediterranean: [
+      { id: "13", name: "Avocado and tomato toast", calories: 280, protein: 8, carbs: 25, fats: 18, prepTime: "8 min", servings: 1, type: "breakfast" },
+      { id: "14", name: "Greek salad with fish", calories: 420, protein: 28, carbs: 20, fats: 25, prepTime: "15 min", servings: 1, type: "lunch" },
+      { id: "15", name: "Baked fish with olives", calories: 380, protein: 32, carbs: 12, fats: 22, prepTime: "25 min", servings: 1, type: "dinner" },
+      { id: "16", name: "Olives and feta cheese", calories: 170, protein: 8, carbs: 5, fats: 14, prepTime: "2 min", servings: 1, type: "snack" },
     ],
   };
 
-  return recipes[nutritionData.dietType] || recipes.balanceada;
+  return recipes[nutritionData.dietType] || recipes.balanced;
 };
 
 export const RecipeCalendar = ({ nutritionData }: RecipeCalendarProps) => {
@@ -78,7 +78,7 @@ export const RecipeCalendar = ({ nutritionData }: RecipeCalendarProps) => {
   };
 
   const weekDays = getWeekDays();
-  const dayNames = ["Dom", "Lun", "Mar", "Mié", "Jue", "Vie", "Sáb"];
+  const dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
   const getTypeColor = (type: Recipe["type"]) => {
     switch (type) {
@@ -92,11 +92,11 @@ export const RecipeCalendar = ({ nutritionData }: RecipeCalendarProps) => {
 
   const getTypeLabel = (type: Recipe["type"]) => {
     switch (type) {
-      case "breakfast": return "Desayuno";
-      case "lunch": return "Almuerzo";
-      case "dinner": return "Cena";
+      case "breakfast": return "Breakfast";
+      case "lunch": return "Lunch";
+      case "dinner": return "Dinner";
       case "snack": return "Snack";
-      default: return "Comida";
+      default: return "Meal";
     }
   };
 
@@ -106,7 +106,7 @@ export const RecipeCalendar = ({ nutritionData }: RecipeCalendarProps) => {
         <CardHeader>
           <div className="flex items-center justify-between">
             <CardTitle className="text-2xl font-semibold">
-              Tu Plan de Alimentación
+              Your Nutrition Plan
             </CardTitle>
             <div className="flex items-center gap-2">
               <Button
@@ -118,7 +118,7 @@ export const RecipeCalendar = ({ nutritionData }: RecipeCalendarProps) => {
                 <ChevronLeft className="h-4 w-4" />
               </Button>
               <span className="text-sm font-medium px-3 py-1 bg-muted rounded-md">
-                Semana {currentWeek + 1}
+                Week {currentWeek + 1}
               </span>
               <Button
                 variant="outline"
@@ -131,7 +131,7 @@ export const RecipeCalendar = ({ nutritionData }: RecipeCalendarProps) => {
             </div>
           </div>
           <p className="text-muted-foreground">
-            Dieta {nutritionData.dietType} • {nutritionData.calories} cal/día • {nutritionData.proteins}g proteínas
+            {nutritionData.dietType} diet • {nutritionData.calories} cal/day • {nutritionData.proteins}g proteins
           </p>
         </CardHeader>
         <CardContent>

@@ -32,7 +32,7 @@ const Index = () => {
               </div>
               <div>
                 <h1 className="text-xl font-bold text-foreground">NutriPlanner</h1>
-                <p className="text-xs text-muted-foreground">Alimentación saludable</p>
+                <p className="text-xs text-muted-foreground">Healthy nutrition</p>
               </div>
             </div>
             
@@ -42,7 +42,7 @@ const Index = () => {
                 className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-primary hover:text-primary/80 transition-colors"
               >
                 <Sparkles className="h-4 w-4" />
-                Nuevo Plan
+                New Plan
               </button>
             )}
           </div>
@@ -57,16 +57,16 @@ const Index = () => {
             <div className="text-center space-y-4 mb-12">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
                 <Sparkles className="h-4 w-4" />
-                Planificación personalizada
+                Personalized planning
               </div>
               <h2 className="text-4xl md:text-5xl font-bold text-foreground leading-tight">
-                Tu plan de alimentación
-                <span className="block text-primary">perfecto te espera</span>
+                Your perfect nutrition
+                <span className="block text-primary">plan awaits</span>
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Crea un plan nutricional personalizado basado en tus objetivos, 
-                preferencias dietéticas y estilo de vida. Recibe recetas saludables 
-                organizadas en un calendario semanal.
+                Create a personalized nutrition plan based on your goals, 
+                dietary preferences and lifestyle. Get healthy recipes 
+                organized in a weekly calendar.
               </p>
             </div>
 
@@ -79,27 +79,27 @@ const Index = () => {
                 <div className="inline-flex p-3 rounded-full bg-primary/10 mb-4">
                   <Leaf className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="font-semibold mb-2">Planes Personalizados</h3>
+                <h3 className="font-semibold mb-2">Personalized Plans</h3>
                 <p className="text-sm text-muted-foreground">
-                  Recetas adaptadas a tu tipo de dieta y objetivos nutricionales
+                  Recipes adapted to your diet type and nutritional goals
                 </p>
               </div>
               <div className="text-center p-6 rounded-2xl bg-card border border-border/50">
                 <div className="inline-flex p-3 rounded-full bg-secondary/60 mb-4">
                   <Sparkles className="h-6 w-6 text-foreground" />
                 </div>
-                <h3 className="font-semibold mb-2">Calendario Visual</h3>
+                <h3 className="font-semibold mb-2">Visual Calendar</h3>
                 <p className="text-sm text-muted-foreground">
-                  Organiza tus comidas semanalmente con un calendario claro y fácil
+                  Organize your meals weekly with a clear and easy calendar
                 </p>
               </div>
               <div className="text-center p-6 rounded-2xl bg-card border border-border/50">
                 <div className="inline-flex p-3 rounded-full bg-accent/60 mb-4">
                   <Leaf className="h-6 w-6 text-foreground" />
                 </div>
-                <h3 className="font-semibold mb-2">Variedad Saludable</h3>
+                <h3 className="font-semibold mb-2">Healthy Variety</h3>
                 <p className="text-sm text-muted-foreground">
-                  Disfruta de recetas deliciosas sin sacrificar tus objetivos de salud
+                  Enjoy delicious recipes without sacrificing your health goals
                 </p>
               </div>
             </div>

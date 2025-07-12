@@ -54,10 +54,10 @@ export const NutritionForm = ({ onSubmit }: NutritionFormProps) => {
           </div>
         </div>
         <CardTitle className="text-2xl font-semibold text-foreground">
-          Configura tu Plan Nutricional
+          Set Up Your Nutrition Plan
         </CardTitle>
         <p className="text-muted-foreground">
-          Cuéntanos sobre tus objetivos para crear un plan personalizado
+          Tell us about your goals to create a personalized plan
         </p>
       </CardHeader>
       <CardContent>
@@ -66,7 +66,7 @@ export const NutritionForm = ({ onSubmit }: NutritionFormProps) => {
             <div className="space-y-2">
               <Label htmlFor="age" className="flex items-center gap-2 text-sm font-medium">
                 <Activity className="h-4 w-4 text-primary" />
-                Edad (años)
+                Age (years)
               </Label>
               <Input
                 id="age"
@@ -82,7 +82,7 @@ export const NutritionForm = ({ onSubmit }: NutritionFormProps) => {
             <div className="space-y-2">
               <Label htmlFor="weight" className="flex items-center gap-2 text-sm font-medium">
                 <Scale className="h-4 w-4 text-primary" />
-                Peso (kg)
+                Weight (kg)
               </Label>
               <Input
                 id="weight"
@@ -98,7 +98,7 @@ export const NutritionForm = ({ onSubmit }: NutritionFormProps) => {
             <div className="space-y-2">
               <Label htmlFor="calories" className="flex items-center gap-2 text-sm font-medium">
                 <Flame className="h-4 w-4 text-accent" />
-                Calorías diarias
+                Daily Calories
               </Label>
               <Input
                 id="calories"
@@ -114,7 +114,7 @@ export const NutritionForm = ({ onSubmit }: NutritionFormProps) => {
             <div className="space-y-2">
               <Label htmlFor="proteins" className="flex items-center gap-2 text-sm font-medium">
                 <Target className="h-4 w-4 text-primary" />
-                Proteínas (g)
+                Proteins (g)
               </Label>
               <Input
                 id="proteins"
@@ -130,7 +130,7 @@ export const NutritionForm = ({ onSubmit }: NutritionFormProps) => {
             <div className="space-y-2">
               <Label htmlFor="carbs" className="flex items-center gap-2 text-sm font-medium">
                 <Apple className="h-4 w-4 text-secondary" />
-                Carbohidratos (g)
+                Carbohydrates (g)
               </Label>
               <Input
                 id="carbs"
@@ -146,7 +146,7 @@ export const NutritionForm = ({ onSubmit }: NutritionFormProps) => {
             <div className="space-y-2">
               <Label htmlFor="fats" className="flex items-center gap-2 text-sm font-medium">
                 <Target className="h-4 w-4 text-accent" />
-                Grasas (g)
+                Fats (g)
               </Label>
               <Input
                 id="fats"
@@ -163,7 +163,7 @@ export const NutritionForm = ({ onSubmit }: NutritionFormProps) => {
           <div className="space-y-2">
             <Label htmlFor="dietType" className="flex items-center gap-2 text-sm font-medium">
               <Leaf className="h-4 w-4 text-primary" />
-              Tipo de dieta
+              Diet Type
             </Label>
             <Select
               value={formData.dietType || ""}
@@ -171,14 +171,14 @@ export const NutritionForm = ({ onSubmit }: NutritionFormProps) => {
               required
             >
               <SelectTrigger className="border-border/70 focus:border-primary">
-                <SelectValue placeholder="Selecciona tu tipo de dieta" />
+                <SelectValue placeholder="Select your diet type" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="balanceada">Balanceada</SelectItem>
+                <SelectItem value="balanced">Balanced</SelectItem>
                 <SelectItem value="keto">Keto</SelectItem>
-                <SelectItem value="mediterranea">Mediterránea</SelectItem>
-                <SelectItem value="vegana">Vegana</SelectItem>
-                <SelectItem value="vegetariana">Vegetariana</SelectItem>
+                <SelectItem value="mediterranean">Mediterranean</SelectItem>
+                <SelectItem value="vegan">Vegan</SelectItem>
+                <SelectItem value="vegetarian">Vegetarian</SelectItem>
                 <SelectItem value="paleo">Paleo</SelectItem>
                 <SelectItem value="dash">DASH</SelectItem>
               </SelectContent>
@@ -189,7 +189,7 @@ export const NutritionForm = ({ onSubmit }: NutritionFormProps) => {
             type="submit"
             className="w-full bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-primary-foreground font-medium py-3 transition-all duration-300 shadow-[var(--shadow-soft)]"
           >
-            Generar Plan de Alimentación
+            Generate Nutrition Plan
           </Button>
         </form>
       </CardContent>
